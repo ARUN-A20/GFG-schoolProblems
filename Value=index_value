@@ -1,0 +1,44 @@
+// for ques copy this link -- https://practice.geeksforgeeks.org/problems/value-equal-to-index-value1330/1?page=1&difficulty[]=-2&sortBy=submissions
+class Solution{
+public:
+
+	vector<int> valueEqualToIndex(int arr[], int n) {
+	    vector <int> store;                          //vector is a dynamic array like data structure which grow or shrink during runtime. SYNTAX ----vector<data_type> name(size) ;---- all value are initialized with 0
+	    for ( i/nt i = 0 ; i<=n ; i++ )
+	    {
+	        if (i+1 == arr[i])
+	        {
+	            store.push_back(i+1);                //push_back() is self-explanatory. it append values into the vector
+	        }
+	       
+	    }
+	    return store;
+	    
+	}
+};
+
+//{ Driver Code Starts.
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int n, i;
+        cin >> n;
+        int arr[n];
+        for (i = 0; i < n; i++) {
+            cin >> arr[i];
+        }
+        Solution ob;
+        auto ans = ob.valueEqualToIndex(arr, n);
+        if (ans.empty()) {
+            cout << "Not Found";
+        } else {
+            for (int x: ans) {
+                cout << x << " ";
+            }
+        }
+        cout << "\n";
+    }
+    return 0;
+}
