@@ -6,6 +6,7 @@ public:
 	    if (n != 0)   return n+ seriesSum(n-1);
 	    else     return 0;
 	}
+// for lower time complexity you can use generalised formula that is n*(n+1)/2
 };
 
 int main() {
