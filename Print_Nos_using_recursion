@@ -1,0 +1,43 @@
+// for question copy this link --- https://practice.geeksforgeeks.org/problems/print-1-to-n-without-using-loops-1587115620/1 page=1&difficulty[]=-2&sortBy=submissions
+#include <iostream>
+using namespace std;
+class Solution{
+    public:
+    //Complete this function
+    void printNos(int N)
+    {
+        //Your code here
+        if (N !=0)
+        {
+            // cout << N<< " ";  this line print the numbers in reverse order 
+            printNos(N-1);
+            cout<< N<< " ";
+        }
+        
+    }
+};
+
+
+
+/* Driver program to test printNos */
+int main()
+{
+    int T;
+    
+    //taking testcases
+    cin>>T;
+    
+    while(T--)
+    {
+        int N;
+        
+        //input N
+        cin>>N;
+        Solution ob;
+        //calling printNos() function
+        ob.printNos(N);
+        cout << "\n";
+    }
+    return 0;
+}
+
