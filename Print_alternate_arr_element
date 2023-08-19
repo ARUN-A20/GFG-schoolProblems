@@ -1,0 +1,37 @@
+//provided function print() which takes A and n as input parameters and print the resultant array in the function itself. You have to print the final number of array ending with a space as Printing of newline character is taken care in driver code itself.*/
+// for ques copy link ---  https://practice.geeksforgeeks.org/problems/print-alternate-elements-of-an-array/1?page=1&difficulty[]=-2&sortBy=submissions
+#include <iostream >
+using namespace std;
+                                  // ar[] is the array 
+                                  // n is the number of elements in array.
+void print(int ar[], int n)
+{
+    
+    // code here
+    cout << ar[0]<< " ";
+    for ( int i=1; i<n ; i++)
+    {
+        if (i%2 != 0)    continue;
+        else    cout << ar[i]<<" ";
+        
+    }  
+}
+
+
+int main()
+{
+   int t;
+   cin>>t;
+   while(t--)
+   {
+     int ar[100001]={0};
+     int n;
+     cin>>n;
+     for(int i=0;i<n;i++)
+      cin>>ar[i];
+      print(ar,n);
+      cout<<endl;
+     }
+
+return 0;
+}
