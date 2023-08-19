@@ -4,7 +4,7 @@ public:
 	// function to return sum of  1, 2, ... n
 	long long seriesSum(int n) {
 	    if (n != 0)   return n+ seriesSum(n-1);
-	   else     return 0;
+	    else     return 0;
 	}
 };
 
