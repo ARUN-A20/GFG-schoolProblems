@@ -1,7 +1,7 @@
 //for question copy this link ---  https://practice.geeksforgeeks.org/problems/binary-search-1587115620/1?page=1&difficulty[]=-1&sortBy=submissions
 #include <bits/stdc++.h>
 using namespace std;
-
+// use merge sort if you want to search in an unsorted array.. because merge sort require less time complexity
 class Solution {
   public:
     int binarysearch(int arr[], int n, int k) {
